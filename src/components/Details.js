@@ -1,12 +1,7 @@
 import React from "react";
-import Header from "./Header";
 
-function calculateTotalMarks(json) {
-  const sum = Object.values(json).reduce(function(acc, val) {
-    return acc + val;
-  });
-  return sum;
-}
+import Header from "./Header";
+import { calculateTotalMarks } from "../helpers.js";
 
 // console.log(props);
 const Details = props => {

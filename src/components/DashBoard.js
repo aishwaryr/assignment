@@ -1,20 +1,14 @@
 import React, { Component } from "react";
 
-// import { fetchStudents } from "../api";
 import Header from "./Header";
 import StudentCard from "./StudentCard";
-
-function compare(a, b) {
-  if (a.name < b.name) return -1;
-  if (a.name > b.name) return 1;
-  return 0;
-}
+import { compare, compareReverse, compareMarks, compareMarksReverse, calculateTotalMarks } from "../helpers.js";
 
 class DashBoard extends Component {
   state = {
-    // students: [],
     searchTerm: "",
-    sortByName: false
+    sortByName: false,
+    sortByTotalMarks: false
   };
 
   handleSearchTermChange = event => {
@@ -24,37 +18,49 @@ class DashBoard extends Component {
   sortByName = () => {
     if (!this.state.sortByName) {
       const sortedByNameStudentsArray = this.props.students.sort(compare);
-      this.setState({
-        students: sortedByNameStudentsArray
-      });
-      console.log(this.state);
+      this.setState({ students: sortedByNameStudentsArray });
+      // console.log(this.state);
+    } else {
+      const sortedByNameStudentsArray = this.props.students.sort(compareReverse);
+      this.setState({ students: sortedByNameStudentsArray });
     }
+    this.setState(function(prevState, props) {
+      return { sortByName: !prevState.sortByName };
+    });
   };
 
-  // componentDidMount() {
-  //   fetchStudents().then(response => {
-  //     console.log(response);
-  //     const studentsArray = Object.keys(response.data).map(student => {
-  //       return response.data[student];
-  //     });
-  //     this.setState({ students: studentsArray });
-  //   });
-  // }
+  sortByTotalMarks = () => {
+    if (!this.state.sortByTotalMarks) {
+      const sortedByMarksStudentsArray = this.props.students.sort(compareMarks);
+      this.setState({ students: sortedByMarksStudentsArray });
+      // console.log(this.state);
+    } else {
+      const sortedByMarksStudentsArray = this.props.students.sort(compareMarksReverse);
+      this.setState({ students: sortedByMarksStudentsArray });
+    }
+    this.setState(function(prevState, props) {
+      return { sortByTotalMarks: !prevState.sortByTotalMarks };
+    });
+  };
 
   render() {
     const { searchTerm } = this.state;
     return (
       <div className="dashboard">
         <Header
+          showSearch
           searchTerm={searchTerm}
           handleSearchTermChange={this.handleSearchTermChange}
           sortByName={this.sortByName}
+          sortByTotalMarks={this.sortByTotalMarks}
         />
         {/* <StudentCard student={this.state.students[0]} /> */}
         <div>
           {this.props.students
             .filter(student => `${student.name}`.toUpperCase().indexOf(searchTerm.toUpperCase()) >= 0)
-            .map(student => <StudentCard key={student.rollNo} student={student} />)}
+            .map(student => (
+              <StudentCard key={student.rollNo} student={student} totalMarks={calculateTotalMarks(student.marks)} />
+            ))}
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ import { fetchStudents } from "../api";
 import DashBoard from "./DashBoard";
 import Details from "./Details";
 
-class App extends React.Component {
+class App extends Component {
   state = {
     students: []
   };
@@ -30,7 +30,9 @@ class App extends React.Component {
             <Route
               path="/details/:id"
               component={props => {
-                const selectedStudent = this.state.students.find(student => props.match.params.id == student.rollNo);
+                const selectedStudent = this.state.students.find(
+                  student => parseInt(props.match.params.id) === student.rollNo
+                );
                 return <Details student={selectedStudent} {...props} />;
               }}
             />
