@@ -1,0 +1,255 @@
+{
+    "110": {
+        "name": "Sadhya",
+        "class": 3,
+        "rollNo": 110,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "111": {
+        "name": "Anoop",
+        "class": 3,
+        "rollNo": 111,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "112": {
+        "name": "Anish",
+        "class": 3,
+        "rollNo": 112,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "113": {
+        "name": "Sagarvir",
+        "class": 3,
+        "rollNo": 113,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77,
+            "s4": 76
+        }
+    },
+    "114": {
+        "name": "Sadhan",
+        "class": 3,
+        "rollNo": 114,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "115": {
+        "name": "Sacharu",
+        "class": 3,
+        "rollNo": 115,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "116": {
+        "name": "Sachchit",
+        "class": 3,
+        "rollNo": 116,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "117": {
+        "name": "Sahadev",
+        "class": 3,
+        "rollNo": 117,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "118": {
+        "name": "Sadadin",
+        "class": 3,
+        "rollNo": 118,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "119": {
+        "name": "Sadgun",
+        "class": 3,
+        "rollNo": 119,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "120": {
+        "name": "Sadasyormi",
+        "class": 3,
+        "rollNo": 120,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "121": {
+        "name": "Anoop",
+        "class": 3,
+        "rollNo": 121,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77,
+            "s4": 66
+        }
+    },
+    "122": {
+        "name": "Sagarvir",
+        "class": 3,
+        "rollNo": 122,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "123": {
+        "name": "Sahaman",
+        "class": 3,
+        "rollNo": 123,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77,
+            "s4": 66
+        }
+    },
+    "124": {
+        "name": "Bakulesha",
+        "class": 3,
+        "rollNo": 124,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "125": {
+        "name": "Sagramasinha",
+        "class": 3,
+        "rollNo": 125,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "126": {
+        "name": "Sahadev",
+        "class": 3,
+        "rollNo": 126,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "127": {
+        "name": "Sagarvir",
+        "class": 3,
+        "rollNo": 127,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "128": {
+        "name": "Sadasyormi",
+        "class": 3,
+        "rollNo": 128,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "129": {
+        "name": "Sadgun",
+        "class": 3,
+        "rollNo": 129,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "130": {
+        "name": "Sadhya",
+        "class": 3,
+        "rollNo": 130,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "131": {
+        "name": "Anoop",
+        "class": 3,
+        "rollNo": 131,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "132": {
+        "name": "Anish",
+        "class": 3,
+        "rollNo": 132,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "133": {
+        "name": "Sagarvir",
+        "class": 3,
+        "rollNo": 133,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    },
+    "134": {
+        "name": "Sadhan",
+        "class": 3,
+        "rollNo": 134,
+        "marks": {
+            "s1": 55,
+            "s2": 67,
+            "s3": 77
+        }
+    }
+}

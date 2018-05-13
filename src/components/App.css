@@ -1,0 +1,10 @@
+.show-card {
+  display: inline-block;
+  width: 24rem;
+  margin: 8px;
+}
+
+.show-inline {
+  display: inline-block;
+  margin-right: 4px;
+}
