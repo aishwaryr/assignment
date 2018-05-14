@@ -17,12 +17,9 @@ class DashBoard extends Component {
 
   sortByName = () => {
     if (!this.state.sortByName) {
-      const sortedByNameStudentsArray = this.props.students.sort(compare);
-      this.setState({ students: sortedByNameStudentsArray });
-      // console.log(this.state);
+      this.props.students.sort(compare);
     } else {
-      const sortedByNameStudentsArray = this.props.students.sort(compareReverse);
-      this.setState({ students: sortedByNameStudentsArray });
+      this.props.students.sort(compareReverse);
     }
     this.setState(function(prevState, props) {
       return { sortByName: !prevState.sortByName };
@@ -31,12 +28,9 @@ class DashBoard extends Component {
 
   sortByTotalMarks = () => {
     if (!this.state.sortByTotalMarks) {
-      const sortedByMarksStudentsArray = this.props.students.sort(compareMarks);
-      this.setState({ students: sortedByMarksStudentsArray });
-      // console.log(this.state);
+      this.props.students.sort(compareMarks);
     } else {
-      const sortedByMarksStudentsArray = this.props.students.sort(compareMarksReverse);
-      this.setState({ students: sortedByMarksStudentsArray });
+      this.props.students.sort(compareMarksReverse);
     }
     this.setState(function(prevState, props) {
       return { sortByTotalMarks: !prevState.sortByTotalMarks };
